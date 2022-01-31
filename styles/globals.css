@@ -18,24 +18,29 @@
     @apply font-montserrat;
     @apply font-bold;
   }
+
   h2 {
     @apply text-4xl;
     @apply font-montserrat;
     @apply font-bold;
   }
+
   h3 {
     @apply text-2xl;
     @apply font-montserrat;
     @apply font-bold;
   }
+
   h4 {
     @apply text-xl;
     @apply font-montserrat;
     @apply font-bold;
   }
+
   p {
     @apply text-base;
   }
+
   small {
     @apply text-sm;
   }

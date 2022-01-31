@@ -16,20 +16,8 @@ export const Navbar: React.FC<NavbarProps> = ({ className }) => {
     >
       <Link href="/">
         <div className="flex space-x-4 items-center">
-          <img
-            className="md:hidden hover: cursor-pointer"
-            src="/logo/logo.svg"
-            height="60px"
-            width="60px"
-            alt="Logo"
-          />
-          <img
-            className="hidden md:block hover: cursor-pointer"
-            src="/logo/text-logo.svg"
-            height="auto"
-            width="175px"
-            alt="Logo"
-          />
+          <img src="./logo/Logo.png" alt="Logo" width="60px" />
+
           <div className="md:hidden flex w-full justify-end">
             <NavbarDropdown />
           </div>
@@ -37,11 +25,11 @@ export const Navbar: React.FC<NavbarProps> = ({ className }) => {
       </Link>
 
       <div className="md:block hidden place-self-center">
-        <ul className="text-accent-pale flex-col text-right md:text-center p-3 md:p-0 md:flex-row flex space-y-2 md:space-y-0 md:space-x-7 font-montserrat">
+        <ul className="flex-col text-right md:text-center p-3 md:p-0 md:flex-row flex space-y-2 md:space-y-0 md:space-x-7">
           {NavbarElements.map((element, i) => {
             return (
               <li key={i}>
-                <h4>{element}</h4>
+                <p className="text-gray-600">{element}</p>
               </li>
             );
           })}

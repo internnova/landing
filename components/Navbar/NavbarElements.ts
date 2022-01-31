@@ -1,1 +1,1 @@
-export const NavbarElements = ["How It Works", "FAQ", "Somethingl"];
+export const NavbarElements = ["How It Works", "FAQs", "Contact Us"];
