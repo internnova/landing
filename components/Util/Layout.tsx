@@ -1,12 +1,12 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
 
-type LayoutProps = {
+interface LayoutProps {
   children?: ReactNode;
   title?: string;
-};
+}
 
-export const Layout = ({ children, title = "Title" }: LayoutProps) => (
+export const Layout = ({ children, title = "InternNova" }: LayoutProps) => (
   <div>
     <Head>
       <title>{title}</title>
