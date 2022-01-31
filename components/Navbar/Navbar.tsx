@@ -34,7 +34,7 @@ export const Navbar: React.FC<NavbarProps> = ({ className }) => {
         </ul>
       </div>
 
-      <div className="md:place-self-end font-raleway float-right relative bottom-3">
+      <div className="md:place-self-end float-right relative bottom-3">
         <Button size="medium" className="hidden md:block">
           Login
         </Button>
