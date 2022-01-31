@@ -6,7 +6,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        raleway: ["Raleway"],
         montserrat: ["Montserrat"],
+        inter: ["Inter"],
         nunito: ["Nunito"],
       },
       colors: {
