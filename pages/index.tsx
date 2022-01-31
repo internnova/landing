@@ -2,7 +2,7 @@ import { Layout } from "../components/Layout";
 
 const IndexPage = () => (
   <Layout title="Home">
-    <h1>test</h1>
+    <h1 className="text-red-500">Hello</h1>
   </Layout>
 );
 
