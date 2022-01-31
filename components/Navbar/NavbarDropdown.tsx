@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { NavbarElements } from "./NavbarElements";
 
-const NavbarDropdown = () => {
+export const NavbarDropdown = () => {
   return (
     <div className="flex justify-end">
       <Menu as="div" className="relative inline-block text-left z-40">
@@ -20,7 +20,7 @@ const NavbarDropdown = () => {
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Menu.Items className="absolute font-montserrat bg-white right-0 w-56 mt-2 origin-top-right rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+          <Menu.Items className="absolute bg-white right-0 w-56 mt-2 origin-top-right rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
             <div className="p-2 divide-y divide-gray-100">
               {NavbarElements.map((element, i) => {
                 return (
@@ -28,7 +28,7 @@ const NavbarDropdown = () => {
                     <a
                       className={`font-montserrat group flex rounded-md items-center w-full px-2 py-2 text-sm`}
                     >
-                      <p className="text-accent-pale font-montserrat font-semibold">
+                      <p className="text-accent-pale font-semibold">
                         {element}
                       </p>
                     </a>
@@ -42,5 +42,3 @@ const NavbarDropdown = () => {
     </div>
   );
 };
-
-export default NavbarDropdown;

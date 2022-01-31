@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { NavbarElements } from "./NavbarElements";
-import NavbarDropdown from "./NavbarDropdown";
+import { NavbarDropdown } from "./NavbarDropdown";
 
 interface NavbarProps {
   className?: string;

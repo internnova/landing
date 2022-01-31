@@ -6,10 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        raleway: ["Raleway"],
         montserrat: ["Montserrat"],
-        inter: ["Inter"],
-        nunito: ["Nunito"],
+        sans: ["Nunito Sans"],
       },
       colors: {
         accent: {
@@ -22,3 +20,8 @@ module.exports = {
   },
   plugins: [],
 };
+
+//sans basically makes it default oh i see
+//then what about montserrat
+//what
+// that you can do via css/give it a class

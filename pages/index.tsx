@@ -8,8 +8,6 @@ const IndexPage = () => (
         <Navbar />
       </div>
     </div>
-
-    <h1 className="font-nunito">Hewlo</h1>
   </Layout>
 );
 
