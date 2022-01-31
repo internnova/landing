@@ -26,11 +26,9 @@ export const NavbarDropdown = () => {
                 return (
                   <Menu.Item key={i}>
                     <a
-                      className={`font-montserrat group flex rounded-md items-center w-full px-2 py-2 text-sm`}
+                      className={`flex rounded-md items-center w-full px-2 py-2 text-sm`}
                     >
-                      <p className="text-accent-pale font-semibold">
-                        {element}
-                      </p>
+                      <p className="text-gray-500">{element}</p>
                     </a>
                   </Menu.Item>
                 );

@@ -1,15 +1,13 @@
-import { useRouter } from "next/router";
 import Link from "next/link";
 import { NavbarElements } from "./NavbarElements";
 import { NavbarDropdown } from "./NavbarDropdown";
+import { Button } from "../Button/Button";
 
 interface NavbarProps {
   className?: string;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({ className }) => {
-  const router = useRouter();
-
   return (
     <div
       className={`${className} md:grid md:grid-cols-3 md:justify-items-stretch`}
@@ -29,21 +27,18 @@ export const Navbar: React.FC<NavbarProps> = ({ className }) => {
           {NavbarElements.map((element, i) => {
             return (
               <li key={i}>
-                <p className="text-gray-600">{element}</p>
+                <p className="text-gray-500">{element}</p>
               </li>
             );
           })}
         </ul>
       </div>
 
-      {/* <div className="md:place-self-end font-raleway float-right">
-        <Button
-          className="hidden md:block"
-          onClick={() => router.push("http://localhost:4000/login")}
-        >
+      <div className="md:place-self-end font-raleway float-right relative bottom-3">
+        <Button size="medium" className="hidden md:block">
           Login
         </Button>
-      </div> */}
+      </div>
     </div>
   );
 };
