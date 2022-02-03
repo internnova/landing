@@ -13,6 +13,11 @@ export const Hero = () => {
     if (!email)
       return toast.error("Please supply an email", {
         duration: 6000,
+        style: {
+          borderRadius: "10px",
+          background: "#333",
+          color: "#fff",
+        },
       });
 
     try {
@@ -32,16 +37,24 @@ export const Hero = () => {
 
       if (data) {
         toast.success("You'll be notified for early access", {
-          position: "top-right",
           duration: 6000,
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+          },
         });
         setEmail("");
       }
     } catch (err) {
       console.error(err);
       toast.error("Something went wrong, try again later.", {
-        position: "top-right",
         duration: 6000,
+        style: {
+          borderRadius: "10px",
+          background: "#333",
+          color: "#fff",
+        },
       });
     }
   };
