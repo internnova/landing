@@ -1,4 +1,3 @@
-// import "@fontsource/montserrat";
 import "@fontsource/nunito-sans";
 import "../styles/globals.css";
 

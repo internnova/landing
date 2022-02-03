@@ -28,12 +28,18 @@
   }
 
   h3 {
-    @apply text-2xl;
+    @apply text-3xl;
     @apply font-montserrat;
     @apply font-bold;
   }
 
   h4 {
+    @apply text-2xl;
+    @apply font-montserrat;
+    @apply font-bold;
+  }
+
+  h5 {
     @apply text-xl;
     @apply font-montserrat;
     @apply font-bold;
