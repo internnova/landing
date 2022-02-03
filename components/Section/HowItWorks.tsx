@@ -22,7 +22,7 @@ const HowItWorksData: HowItWorksDataInterface[] = [
 ];
 export const HowItWorks = () => {
   return (
-    <div className="relative w-full px-5 pt-14 lg:px-0 lg:pt-0">
+    <div className="relative w-full px-5 pb-20 overflow-hidden pt-14 lg:px-0 lg:pt-0">
       <h2 className="py-10 text-center lg:pt-0 lg:pb-10">
         internships, <span className="underline">simplified</span>.
       </h2>

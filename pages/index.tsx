@@ -5,8 +5,8 @@ import { HowItWorks } from "../components/Section/HowItWorks";
 
 const IndexPage = () => (
   <Layout title="InternNova | Home">
-    <div>
-      <div className="p-5 ">
+    <div className="text-white bg-black ">
+      <div className="p-5">
         <Navbar />
       </div>
 

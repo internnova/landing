@@ -1,47 +1,21 @@
 import Link from "next/link";
-import { NavbarElements } from "./NavbarElements";
-import { NavbarDropdown } from "./NavbarDropdown";
-import { Button } from "../Button/Button";
 
-interface NavbarProps {
-  className?: string;
-}
-
-export const Navbar: React.FC<NavbarProps> = ({ className }) => {
+export const Navbar = () => {
   return (
-    <div
-      className={`${className} lg:grid md:grid-cols-3 md:justify-items-stretch font-montserrat`}
-    >
-      <Link href="/">
-        <div className="flex items-center space-x-4">
-          <img src="./logo/Logo.png" alt="Logo" width="60px" />
-
-          <div className="flex justify-end w-full lg:hidden">
-            <NavbarDropdown />
-            <div className="ml-2">
-              <Button size="medium">Login</Button>
-            </div>
-          </div>
-        </div>
-      </Link>
-
-      <div className="hidden lg:block place-self-center">
-        <ul className="flex flex-col p-3 space-y-2 text-right lg:text-center md:p-0 md:flex-row md:space-y-0 md:space-x-7">
-          {NavbarElements.map((element, i) => {
-            return (
-              <li key={i}>
-                <p className="text-gray-500">{element}</p>
-              </li>
-            );
-          })}
-        </ul>
+    <header className="relative z-10 px-6 text-left bg-transparent select-none lg:mx-16">
+      <div className="flex items-center justify-between h-20 lg:h-24">
+        <Link href="/">
+          <img src="/logo/Logo.png" width="50px" />
+        </Link>
+        <nav className="flex items-center justify-between w-24 justify-self-end">
+          <a className="hover:opacity-70" href="https://blog.internnova.co/">
+            Blog
+          </a>
+          <Link href="/faq">
+            <a className="hover:opacity-70">FAQ</a>
+          </Link>
+        </nav>
       </div>
-
-      <div className="relative float-right lg:place-self-end bottom-3">
-        <Button size="medium" className="hidden lg:block">
-          Login
-        </Button>
-      </div>
-    </div>
+    </header>
   );
 };
