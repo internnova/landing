@@ -7,10 +7,9 @@ export const Hero = () => {
         <div className="p-6 mt-12 md:flex md:justify-center lg:mx-16 md:mt-24">
           <div className="flex xl:space-x-60">
             <div className="space-y-6">
-              <h1 className="text-4xl md:text-5xl">
+              <h1 className="text-4xl md:text-5xl text-transform-gradient">
                 experience the world <br className="hidden md:block" />{" "}
-                <span className="text-accent-primary">beyond</span> the
-                classroom
+                <span className="gradient_text">beyond</span> the classroom
               </h1>
               <p className="max-w-xl text-lg text-gray-300">
                 InternNova makes finding an internship easy and accessible for
