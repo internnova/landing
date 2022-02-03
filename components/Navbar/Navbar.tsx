@@ -10,7 +10,7 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({ className }) => {
   return (
     <div
-      className={`${className} lg:grid md:grid-cols-3 md:justify-items-stretch`}
+      className={`${className} lg:grid md:grid-cols-3 md:justify-items-stretch font-montserrat`}
     >
       <Link href="/">
         <div className="flex items-center space-x-4">

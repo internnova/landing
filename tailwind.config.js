@@ -16,6 +16,9 @@ module.exports = {
           },
         },
       },
+      screens: {
+        'tablet': "900px"
+      }
     },
   },
   plugins: [],

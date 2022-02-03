@@ -1,6 +1,7 @@
 import { Navbar } from "../components/Navbar/Navbar";
 import { Hero } from "../components/Section/Hero";
 import { Layout } from "../components/Util/Layout";
+import { HowItWorks } from "../components/Section/HowItWorks";
 
 const IndexPage = () => (
   <Layout title="InternNova | Home">
@@ -10,6 +11,7 @@ const IndexPage = () => (
       </div>
 
       <Hero />
+      <HowItWorks />
     </div>
   </Layout>
 );
