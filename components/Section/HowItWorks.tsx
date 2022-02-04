@@ -20,6 +20,7 @@ const HowItWorksData: HowItWorksDataInterface[] = [
       "If you get accepted for the internship, you’ll be able to start soon. If you got rejected, don’t worry, there are more internships, you can always try again.",
   },
 ];
+
 export const HowItWorks = () => {
   return (
     <div className="relative w-full px-5 pt-14 lg:px-0 lg:pt-0">
