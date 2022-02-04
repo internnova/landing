@@ -88,6 +88,7 @@ export const Hero = () => {
                   onSubmit={submitWaitlistForm}
                 />
               </div>
+              <p className="text-sm">Get notified when InternNova launches</p>
             </div>
             <img
               className="relative hidden mt-10 lg:block bottom-32"
