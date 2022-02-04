@@ -43,9 +43,9 @@ export const Features = () => {
                     alt="Workplace"
                   />
                 </div>
-                <h3 className="text-center text-accent-primary">
+                <h4 className="text-center text-accent-primary">
                   {data.title}
-                </h3>
+                </h4>
                 <p className="text-center text-gray-300">{data.content}</p>
               </div>
             </div>

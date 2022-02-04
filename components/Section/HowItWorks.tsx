@@ -7,12 +7,12 @@ const HowItWorksData: HowItWorksDataInterface[] = [
   {
     title: "Sign Up",
     content:
-      "You can sign up either with your email, google, or discord. Once you sign up, you’ll need to write a bio, employers will be able to see this bio, so make sure it is professional",
+      " You can sign up from either email, google, or discord. All you'll have to do after this is write a short bio about yourself. Employers can see this bio so make sure to keep it professional.",
   },
   {
     title: "Apply",
     content:
-      "After signing up, you can view internships. If you find an internship that meets your requires, you can apply to it. When you apply make sure you write a small compelling essay in the area given.",
+      "After signing up, you can view the internships we offer. If any of them catch your interest go ahead and apply for it! While doing this, make sure you upload a short video describing why you should be selected for this internship in the given area",
   },
   {
     title: "That's It!",
@@ -24,7 +24,8 @@ export const HowItWorks = () => {
   return (
     <div className="relative w-full px-5 pt-14 lg:px-0 lg:pt-0">
       <h2 className="py-10 text-center lg:pt-0 lg:pb-10">
-        internships, <span className="gradient_text">simplified</span>.
+        higschool internships, <span className="gradient_text">simplified</span>
+        .
       </h2>
       <img
         className="absolute left-0 hidden w-1/3 top-1 tablet:block"

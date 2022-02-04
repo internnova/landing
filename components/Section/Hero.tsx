@@ -71,9 +71,10 @@ export const Hero = () => {
               </h1>
               <p className="max-w-xl text-lg text-gray-300">
                 InternNova makes finding an internship easy and accessible for
-                high-school students all over the world! Our application
-                connects you with prestigious global companies, so you can gain
-                experience and build your resume.
+                high-school students all over the world! Through our site,
+                you'll be able to connect with prestigious global companies
+                which will help you build your resume and gain invaluable
+                inexperience to kickstart your career!
               </p>
 
               <div className="flex space-x-2">

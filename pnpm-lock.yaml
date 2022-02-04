@@ -10,6 +10,7 @@ specifiers:
   autoprefixer: ^10.4.2
   axios: ^0.25.0
   next: latest
+  next-seo: ^5.1.0
   postcss: ^8.4.5
   react: ^17.0.2
   react-dom: ^17.0.2
@@ -24,6 +25,7 @@ dependencies:
   '@headlessui/react': 1.4.3_react-dom@17.0.2+react@17.0.2
   axios: 0.25.0
   next: 12.0.10_react-dom@17.0.2+react@17.0.2
+  next-seo: 5.1.0_61390be992b634a688f7c2555547b55b
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-hot-toast: 2.2.0_react-dom@17.0.2+react@17.0.2
@@ -629,6 +631,18 @@ packages:
     resolution: {integrity: sha512-fmsZYa9lpn69Ad5eDn7FMcnnSR+8R34W9qJEijxYhTbfOWzr22n1QxCMzXLK+ODyW2973V3Fux959iQoUxzUIA==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
+
+  /next-seo/5.1.0_61390be992b634a688f7c2555547b55b:
+    resolution: {integrity: sha512-ampuQfNTOi1x+xtRIb6CZGunIo6rQXtMo2Tyu861d5GjJFIwfOXsA4lzCa4+e2rLkyXDyVpavNNUZWa3US9ELw==}
+    peerDependencies:
+      next: ^8.1.1-canary.54 || >=9.0.0
+      react: '>=16.0.0'
+      react-dom: '>=16.0.0'
+    dependencies:
+      next: 12.0.10_react-dom@17.0.2+react@17.0.2
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    dev: false
 
   /next/12.0.10_react-dom@17.0.2+react@17.0.2:
     resolution: {integrity: sha512-1y3PpGzpb/EZzz1jgne+JfZXKAVJUjYXwxzrADf/LWN+8yi9o79vMLXpW3mevvCHkEF2sBnIdjzNn16TJrINUw==}
