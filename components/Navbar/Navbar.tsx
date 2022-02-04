@@ -23,7 +23,7 @@ export const Navbar = () => {
           </div>
           <div className="px-2">
             <a
-              href="https://discord.gg/https://discord.gg/24dyywQm5"
+              href="https://discord.gg/24dyywQm5S"
               target="blank"
               rel="noreferrer"
             >

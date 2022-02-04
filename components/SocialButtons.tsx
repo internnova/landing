@@ -9,7 +9,7 @@ export const SocialButtons = () => {
     { icon: FiGithub, link: "https://github.com/internnova" },
     {
       icon: FaDiscord,
-      link: "https://discord.gg/https://discord.gg/24dyywQm5S",
+      link: "https://discord.gg/24dyywQm5S",
     },
     {
       icon: FaLinkedin,
