@@ -6,7 +6,9 @@
 High school internsips, revolutionized</h1>
 <br>
 <p align="center">
-  <img src="https://img.shields.io/badge/version-1.0.0--beta-green"> <img src="https://img.shields.io/github/license/internnova/landing"> <img src="https://img.shields.io/tokei/lines/github/internnova/landing?label=lines%20of%20code"> <img src="https://img.shields.io/github/languages/top/internnova/landing">
+  <img src="https://img.shields.io/badge/version-1.0.0--beta-green"> 
+  <img src="https://img.shields.io/tokei/lines/github/internnova/landing?label=lines%20of%20code">
+  <img src="https://img.shields.io/github/languages/top/internnova/landing">
   <img src="https://img.shields.io/github/repo-size/internnova/landing">
 </p>
 <br>
