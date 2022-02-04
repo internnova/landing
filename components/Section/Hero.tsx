@@ -66,7 +66,7 @@ export const Hero = () => {
           <div className="flex xl:space-x-60">
             <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl text-transform-gradient">
-                higschool internships <br className="hidden md:block" />{" "}
+                highschool internships <br className="hidden md:block" />{" "}
                 <span className="gradient_text">revolutionized</span>.
               </h1>
               <p className="max-w-xl text-lg text-gray-300">
