@@ -1,5 +1,5 @@
 import React from "react";
-import { FaDiscord, FaInstagram } from "react-icons/fa";
+import { FaDiscord, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FiTwitter, FiGithub } from "react-icons/fi";
 
 export const SocialButtons = () => {
@@ -10,6 +10,10 @@ export const SocialButtons = () => {
     {
       icon: FaDiscord,
       link: "https://discord.gg/https://discord.gg/24dyywQm5S",
+    },
+    {
+      icon: FaLinkedin,
+      link: "https://www.linkedin.com/company/internnova/",
     },
   ];
 
