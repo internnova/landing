@@ -24,10 +24,14 @@ const HowItWorksData: HowItWorksDataInterface[] = [
 export const HowItWorks = () => {
   return (
     <div className="relative w-full px-5 pt-14 lg:px-0 lg:pt-0">
-      <h2 className="py-10 text-center lg:pt-0 lg:pb-10">
+      <h2 className="py-10 text-center lg:pt-0 lg:pb-10 hidden md:block">
         highschool internships,{" "}
         <span className="gradient_text">simplified</span>.
       </h2>
+      <h3 className="py-10 text-center lg:pt-0 lg:pb-10 md:hidden">
+        highschool internships, <br className="pb-2" />{" "}
+        <span className="text-4xl gradient_text">simplified</span>
+      </h3>
       <img
         className="absolute left-0 hidden w-1/3 top-1 tablet:block"
         src="/gradients/gradient-1.png"
@@ -35,7 +39,7 @@ export const HowItWorks = () => {
         width="600"
       />
       <img
-        className="absolute right-0 hidden w-32 top-1 md:block"
+        className="absolute right-0 hidden w-32 top-1 tablet:block"
         src="/illustration/dots.png"
         alt="Workplace"
         width="600"
