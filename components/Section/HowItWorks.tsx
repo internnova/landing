@@ -28,7 +28,7 @@ export const HowItWorks = () => {
         highschool internships,{" "}
         <span className="gradient_text">simplified</span>.
       </h2>
-      <h3 className="py-10 text-center lg:pt-0 lg:pb-10 md:hidden">
+      <h3 className="py-10 text-center lg:pt-0 lg:pb-10 md:hidden text-2xl sm:text-3xl">
         highschool internships, <br className="pb-2" />{" "}
         <span className="text-4xl gradient_text">simplified</span>
       </h3>
