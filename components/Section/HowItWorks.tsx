@@ -24,8 +24,8 @@ export const HowItWorks = () => {
   return (
     <div className="relative w-full px-5 pt-14 lg:px-0 lg:pt-0">
       <h2 className="py-10 text-center lg:pt-0 lg:pb-10">
-        higschool internships, <span className="gradient_text">simplified</span>
-        .
+        highschool internships,{" "}
+        <span className="gradient_text">simplified</span>.
       </h2>
       <img
         className="absolute left-0 hidden w-1/3 top-1 tablet:block"
