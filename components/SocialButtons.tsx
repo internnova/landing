@@ -6,7 +6,7 @@ export const SocialButtons = () => {
   const socials = [
     { icon: FiTwitter, link: "https://twitter.com/internnovahq" },
     { icon: FaInstagram, link: "https://instagram.com/internnova" },
-    { icon: FiGithub, link: "https://github.com/internnovahq" },
+    { icon: FiGithub, link: "https://github.com/internnova" },
     {
       icon: FaDiscord,
       link: "https://discord.gg/https://discord.gg/24dyywQm5S",
