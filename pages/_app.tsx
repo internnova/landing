@@ -15,7 +15,7 @@ const InternNova = ({ Component, pageProps }) => {
             "InternNova makes finding an internship easy and accessible for high-school students all over the world! Through our site, you'll be able to connect with prestigious global companies which will help you build your resume and gain invaluable inexperience to kickstart your career!",
           images: [
             {
-              url: "https://www.internnova.co/seo.png",
+              url: "https://www.internnova.co/seo-img.png",
               height: 1212,
               width: 2114,
               alt: "Samrath",
