@@ -1,4 +1,5 @@
 {
+  "name": "@internnova/landing",
   "private": true,
   "scripts": {
     "dev": "next",
