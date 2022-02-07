@@ -8,7 +8,7 @@ import { Footer } from "../components/Footer";
 
 const IndexPage = () => (
   <Layout title="InternNova | Home">
-    <div className="text-white bg-black ">
+    <div className="text-white bg-[#121212] ">
       <div className="p-5">
         <Navbar />
       </div>
