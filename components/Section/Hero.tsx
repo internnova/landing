@@ -1,27 +1,25 @@
-import { useState } from "react";
-import { FiMail } from "react-icons/fi";
-import { TextBox } from "../TextBox";
-import axios from "axios";
-import toast, { Toaster } from "react-hot-toast";
+import {useState} from "react"
+import {FiMail} from "react-icons/fi"
+import {TextBox} from "../TextBox"
+import axios from "axios"
+import toast, {Toaster} from "react-hot-toast"
 
 export const Hero = () => {
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState("")
 
   const submitWaitlistForm = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+    e.preventDefault()
 
     if (!email)
       return toast.error("Please supply an email", {
         duration: 6000,
         style: {
           borderRadius: "10px",
-          background: "#333",
-          color: "#fff",
         },
-      });
+      })
 
     try {
-      const { data } = await axios.post(
+      const {data} = await axios.post(
         "https://getwaitlist.com/api/v1/waitlists/submit",
         {
           api_key: process.env.NEXT_PUBLIC_WAITLIST_API_KEY,
@@ -33,21 +31,19 @@ export const Hero = () => {
             "Content-Type": "application/json",
           },
         }
-      );
+      )
 
       if (data) {
         toast.success("You'll be notified for early access", {
           duration: 6000,
           style: {
             borderRadius: "10px",
-            background: "#333",
-            color: "#fff",
           },
-        });
-        setEmail("");
+        })
+        setEmail("")
       }
     } catch (err) {
-      console.error(err);
+      console.error(err)
       toast.error("Something went wrong, try again later.", {
         duration: 6000,
         style: {
@@ -55,13 +51,13 @@ export const Hero = () => {
           background: "#333",
           color: "#fff",
         },
-      });
+      })
     }
-  };
+  }
   return (
     <>
       <div className="flex items-center justify-center min-h-[70vh] md:min-h-max">
-        <Toaster position="top-right" reverseOrder={false} />
+        <Toaster reverseOrder={false} />
         <div className="p-6 mt-12 md:flex md:justify-center lg:mx-16 md:mt-24">
           <div className="flex xl:space-x-60">
             <div className="space-y-6">
@@ -69,7 +65,7 @@ export const Hero = () => {
                 highschool internships <br className="hidden md:block" />{" "}
                 <span className="gradient_text">revolutionized</span>.
               </h1>
-              <p className="max-w-xl text-lg text-gray-300">
+              <p className="max-w-xl text-lg text-gray-700">
                 InternNova makes finding an internship easy and accessible for
                 high-school students all over the world! Through our site,
                 you'll be able to connect with prestigious global companies
@@ -101,5 +97,5 @@ export const Hero = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}

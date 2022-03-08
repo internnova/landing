@@ -1,4 +1,4 @@
-import { FiArrowRight } from "react-icons/fi";
+import {FiArrowRight} from "react-icons/fi"
 
 export const TextBox = ({
   Icon,
@@ -11,7 +11,7 @@ export const TextBox = ({
 }) => {
   return (
     <div
-      className={`h-[3.5rem] ${width} rounded-md flex items-center gap-2 bg-[#171717] border-[0.2rem] border-[#2B2B2B]`}
+      className={`h-[3.5rem] ${width} rounded-md flex items-center gap-2 border-[0.2rem] border-[#2B2B2B]`}
     >
       <Icon className="ml-4 h-[1.5rem] w-[1.5rem]" />
       <form
@@ -33,5 +33,5 @@ export const TextBox = ({
         </button>
       </form>
     </div>
-  );
-};
+  )
+}

@@ -1,7 +1,7 @@
 interface FeaturesDataInterface {
-  title: string;
-  content: string;
-  image: string;
+  title: string
+  content: string
+  image: string
 }
 
 const FeaturesData: FeaturesDataInterface[] = [
@@ -23,18 +23,21 @@ const FeaturesData: FeaturesDataInterface[] = [
       "InternNova is founded by Samrath Chadha and Simran Mehendi, two highschoolers passionate about helping people find internships",
     image: "/illustration/feature-3.png",
   },
-];
+]
 
 export const Features = () => {
   return (
     <section className="lg:pt-[120px] pb-20 lg:[pb-20] text-center">
-      <h1 className="pb-10">
-        Why <span className="gradient_text">InternNova</span>
-      </h1>
+      <h2 className="pb-10">
+        Why <span className="gradient_text">InternNova</span>?
+      </h2>
       <div className="container m-auto">
         <div className="grid grid-cols-1 gap-4 mx-auto lg:grid-cols-3">
           {FeaturesData.map((data, i) => (
-            <div key={i} className="w-[300px] mx-auto">
+            <div
+              key={i}
+              className="w-[300px] sm:w-[400px] md:w-[500px] lg:w-[300px] mx-auto"
+            >
               <div className="flex flex-col items-center justify-center mx-auto text-center">
                 <div className="max-h-30 w-60">
                   <img
@@ -46,12 +49,12 @@ export const Features = () => {
                 <h4 className="text-center text-accent-primary">
                   {data.title}
                 </h4>
-                <p className="text-center text-gray-300">{data.content}</p>
+                <p className="text-center text-gray-700">{data.content}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

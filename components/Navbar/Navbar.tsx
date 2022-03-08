@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { FaDiscord, FaInstagram } from "react-icons/fa";
+import Link from "next/link"
+import {FaDiscord, FaInstagram} from "react-icons/fa"
 
 export const Navbar = () => {
   return (
@@ -18,7 +18,7 @@ export const Navbar = () => {
               target="blank"
               rel="noreferrer"
             >
-              <FaInstagram className="h-5 w-5 hover:opacity-[0.8] text-[#fff]" />
+              <FaInstagram className="h-5 w-5 hover:opacity-[0.8" />
             </a>
           </div>
           <div className="px-2">
@@ -27,11 +27,11 @@ export const Navbar = () => {
               target="blank"
               rel="noreferrer"
             >
-              <FaDiscord className="h-6 w-6 hover:opacity-[0.8] text-[#fff]" />
+              <FaDiscord className="h-6 w-6 hover:opacity-[0.8]" />
             </a>
           </div>
         </nav>
       </div>
     </header>
-  );
-};
+  )
+}

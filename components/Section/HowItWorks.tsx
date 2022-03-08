@@ -1,6 +1,6 @@
 interface HowItWorksDataInterface {
-  title: string;
-  content: string;
+  title: string
+  content: string
 }
 
 const HowItWorksData: HowItWorksDataInterface[] = [
@@ -19,7 +19,7 @@ const HowItWorksData: HowItWorksDataInterface[] = [
     content:
       "If you get accepted for the internship, you’ll be able to start soon. If you got rejected, don’t worry, there are more internships, you can always try again.",
   },
-];
+]
 
 export const HowItWorks = () => {
   return (
@@ -28,7 +28,7 @@ export const HowItWorks = () => {
         highschool internships,{" "}
         <span className="gradient_text">simplified</span>.
       </h2>
-      <h3 className="py-10 text-center lg:pt-0 lg:pb-10 md:hidden text-2xl sm:text-3xl">
+      <h3 className="py-10 text-center lg:pt-0 lg:pb-10 md:hidden text-3xl">
         highschool internships, <br className="pb-2" />{" "}
         <span className="text-4xl gradient_text">simplified</span>
       </h3>
@@ -49,15 +49,15 @@ export const HowItWorks = () => {
       {HowItWorksData.map((data, i) => (
         <div
           key={i}
-          className="flex flex-col w-full mx-auto mb-10 space-y-4 text-center sm:w-2/3 md:w-1/3"
+          className="flex flex-col w-full mx-auto mb-10 space-y-4 text-center sm:w-2/3 md:w-1/2 xl:w-[40vw]"
         >
-          <h3>
+          <h3 className="text-2xl md:text-3xl">
             <span className="text-accent-primary">{i + 1}. </span>
             {data.title}
           </h3>
-          <p className="text-lg text-gray-300">{data.content}</p>
+          <p className="text-lg text-gray-700">{data.content}</p>
         </div>
       ))}
     </div>
-  );
-};
+  )
+}

@@ -58,9 +58,9 @@
   }
 }
 
-:root {
-  color-scheme: dark;
-}
+/* :root { */
+/*   color-scheme: dark; */
+/* } */
 
 .gradient_text {
   background: url("https://media4.giphy.com/media/3o6vXRpbptjHM70EzS/200w.webp?cid=ecf05e47gp3eeo3fq7tq0bncrq030e6meca71ezv002bizbk&rid=200w.webp&ct=g");
