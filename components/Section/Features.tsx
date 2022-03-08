@@ -1,7 +1,7 @@
 interface FeaturesDataInterface {
-  title: string
-  content: string
-  image: string
+  title: string;
+  content: string;
+  image: string;
 }
 
 const FeaturesData: FeaturesDataInterface[] = [
@@ -23,7 +23,7 @@ const FeaturesData: FeaturesDataInterface[] = [
       "InternNova is founded by Samrath Chadha and Simran Mehendi, two highschoolers passionate about helping people find internships",
     image: "/illustration/feature-3.png",
   },
-]
+];
 
 export const Features = () => {
   return (
@@ -56,5 +56,5 @@ export const Features = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};

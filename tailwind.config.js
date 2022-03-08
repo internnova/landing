@@ -17,8 +17,8 @@ module.exports = {
         },
       },
       screens: {
-        'tablet': "900px"
-      }
+        tablet: "900px",
+      },
     },
   },
   plugins: [],

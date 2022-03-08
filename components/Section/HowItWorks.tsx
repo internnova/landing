@@ -1,6 +1,6 @@
 interface HowItWorksDataInterface {
-  title: string
-  content: string
+  title: string;
+  content: string;
 }
 
 const HowItWorksData: HowItWorksDataInterface[] = [
@@ -19,7 +19,7 @@ const HowItWorksData: HowItWorksDataInterface[] = [
     content:
       "If you get accepted for the internship, you’ll be able to start soon. If you got rejected, don’t worry, there are more internships, you can always try again.",
   },
-]
+];
 
 export const HowItWorks = () => {
   return (
@@ -59,5 +59,5 @@ export const HowItWorks = () => {
         </div>
       ))}
     </div>
-  )
-}
+  );
+};

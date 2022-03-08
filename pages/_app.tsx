@@ -18,7 +18,7 @@ const InternNova = ({ Component, pageProps }) => {
               url: "https://www.internnova.co/seo-img.png",
               height: 1212,
               width: 2114,
-              alt: "Samrath",
+              alt: "InternNova",
             },
           ],
           site_name: "InternNova",
@@ -29,7 +29,15 @@ const InternNova = ({ Component, pageProps }) => {
           cardType: "summary_large_image",
         }}
       />
-      <Component {...pageProps} />
+      <div
+        style={{
+          backgroundImage: "url(/bg.png)",
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
+        }}
+      >
+        <Component {...pageProps} />
+      </div>
     </>
   );
 };

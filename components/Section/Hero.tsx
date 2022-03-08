@@ -1,14 +1,14 @@
-import {useState} from "react"
-import {FiMail} from "react-icons/fi"
-import {TextBox} from "../TextBox"
-import axios from "axios"
-import toast, {Toaster} from "react-hot-toast"
+import { useState } from "react";
+import { FiMail } from "react-icons/fi";
+import { TextBox } from "../TextBox";
+import axios from "axios";
+import toast, { Toaster } from "react-hot-toast";
 
 export const Hero = () => {
-  const [email, setEmail] = useState("")
+  const [email, setEmail] = useState("");
 
   const submitWaitlistForm = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
+    e.preventDefault();
 
     if (!email)
       return toast.error("Please supply an email", {
@@ -16,10 +16,10 @@ export const Hero = () => {
         style: {
           borderRadius: "10px",
         },
-      })
+      });
 
     try {
-      const {data} = await axios.post(
+      const { data } = await axios.post(
         "https://getwaitlist.com/api/v1/waitlists/submit",
         {
           api_key: process.env.NEXT_PUBLIC_WAITLIST_API_KEY,
@@ -31,7 +31,7 @@ export const Hero = () => {
             "Content-Type": "application/json",
           },
         }
-      )
+      );
 
       if (data) {
         toast.success("You'll be notified for early access", {
@@ -39,11 +39,11 @@ export const Hero = () => {
           style: {
             borderRadius: "10px",
           },
-        })
-        setEmail("")
+        });
+        setEmail("");
       }
     } catch (err) {
-      console.error(err)
+      console.error(err);
       toast.error("Something went wrong, try again later.", {
         duration: 6000,
         style: {
@@ -51,9 +51,9 @@ export const Hero = () => {
           background: "#333",
           color: "#fff",
         },
-      })
+      });
     }
-  }
+  };
   return (
     <>
       <div className="flex items-center justify-center min-h-[70vh] md:min-h-max">
@@ -76,7 +76,7 @@ export const Hero = () => {
               <div className="flex space-x-2">
                 <TextBox
                   placeholder="Email Address"
-                  width="md:w-[27rem] 2xl:w-[35rem]"
+                  width="w-[15rem] sm:w-[25rem] md:w-[27rem] 2xl:w-[35rem]"
                   value={email}
                   setValue={setEmail}
                   Icon={FiMail}
@@ -97,5 +97,5 @@ export const Hero = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};

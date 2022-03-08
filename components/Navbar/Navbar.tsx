@@ -1,11 +1,11 @@
-import Link from "next/link"
-import {FaDiscord, FaInstagram} from "react-icons/fa"
+import Link from "next/link";
+import { FaDiscord, FaInstagram } from "react-icons/fa";
 
 export const Navbar = () => {
   return (
-    <header className="relative z-10 px-6 text-left bg-transparent select-none lg:mx-16">
+    <header className="relative z-10 px-6 pl-0 md:pl-6 text-left bg-transparent select-none lg:mx-16">
       <div className="flex items-center justify-between h-20 lg:h-24">
-        <Link href="/">
+        <Link href="#">
           <img src="/logo/Logo.png" width="50px" />
         </Link>
         <nav className="flex items-center justify-between w-24 mr-10 justify-self-end">
@@ -33,5 +33,5 @@ export const Navbar = () => {
         </nav>
       </div>
     </header>
-  )
-}
+  );
+};

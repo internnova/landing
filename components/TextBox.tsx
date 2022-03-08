@@ -1,4 +1,4 @@
-import {FiArrowRight} from "react-icons/fi"
+import { FiArrowRight } from "react-icons/fi";
 
 export const TextBox = ({
   Icon,
@@ -33,5 +33,5 @@ export const TextBox = ({
         </button>
       </form>
     </div>
-  )
-}
+  );
+};

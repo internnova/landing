@@ -1,9 +1,9 @@
-import {Navbar} from "../components/Navbar/Navbar"
-import {Hero} from "../components/Section/Hero"
-import {Layout} from "../components/Util/Layout"
-import {HowItWorks} from "../components/Section/HowItWorks"
-import {Features} from "../components/Section/Features"
-import {Footer} from "../components/Footer"
+import { Navbar } from "../components/Navbar/Navbar";
+import { Hero } from "../components/Section/Hero";
+import { Layout } from "../components/Util/Layout";
+import { HowItWorks } from "../components/Section/HowItWorks";
+import { Features } from "../components/Section/Features";
+import { Footer } from "../components/Footer";
 // import { Testimonials } from "../components/Section/Testimonials";
 
 const IndexPage = () => (
@@ -19,6 +19,6 @@ const IndexPage = () => (
       <Footer />
     </div>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
