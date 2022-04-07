@@ -1,6 +1,6 @@
 interface HowItWorksDataInterface {
-  title: string;
-  content: string;
+  title: string
+  content: string
 }
 
 const HowItWorksData: HowItWorksDataInterface[] = [
@@ -19,7 +19,7 @@ const HowItWorksData: HowItWorksDataInterface[] = [
     content:
       "If you get accepted for the internship, you’ll be able to start soon. If you got rejected, don’t worry, there are more internships, you can always try again.",
   },
-];
+]
 
 export const HowItWorks = () => {
   return (
@@ -39,8 +39,11 @@ export const HowItWorks = () => {
         width="600"
       />
       <img
-        className="absolute right-0 hidden w-32 top-1 tablet:block"
+        className="absolute right-0 hidden w-32 top-1 tablet:block grey_image"
         src="/illustration/dots.png"
+        style={{
+          filter: "brightness(0.83)",
+        }}
         alt="Workplace"
         width="600"
       />
@@ -59,5 +62,5 @@ export const HowItWorks = () => {
         </div>
       ))}
     </div>
-  );
-};
+  )
+}
